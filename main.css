@@ -1,0 +1,49 @@
+* {
+    font-family: monospace, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerB {
+    display: flex;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color: #059CE8;
+    border-radius: .4rem;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1.5rem 2.5rem;
+    margin: .2rem .5rem;
+    transition: background-color .2s;
+}
+
+.btn:hover {
+    background-color: #09425e;
+}
+
+.btn:active {
+    background-color: #059CE8;
+}
+
+i {
+    visibility: hidden;
+    font-size: 4rem !important;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+i:hover {
+    color: #059CE8 !important;
+}
