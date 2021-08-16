@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Coin</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Select Upside or Down</h1>
+
+        <p id="end"></p>
+        <p id="won" class="x"></p>
+        <p id="message"></p>
+        <div class="containerB">
+            <button type="button" class="btn x" id="upside" onclick="clickSelect()">UPSIDE</button>
+            <button type="button" class="btn x" id="down" onclick="clickSelect()">DOWN</button>
+        </div>
+        <i class="fa fa-refresh" id="refresh" onclick="location.reload(true);"></i>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
