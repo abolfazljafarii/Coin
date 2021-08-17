@@ -8,12 +8,12 @@
     align-items: center;
 }
 
-.containerB {
-    display: flex;
-}
-
 p {
     font-size: 1.5rem;
+}
+
+.title{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn {
@@ -26,8 +26,8 @@ p {
     padding: 1.5rem 2.5rem;
     margin: .2rem .5rem;
     transition: background-color .2s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .btn:hover {
     background-color: #09425e;
 }
