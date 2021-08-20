@@ -14,6 +14,10 @@ p {
 
 .title{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #059CE8;
+    border-radius: 100px;
+    width: 42%;
+    margin: 3%;
 }
 
 .btn {
@@ -46,4 +50,13 @@ i {
 
 i:hover {
     color: #059CE8 !important;
+}
+
+
+body {
+    background-color: #dba54f;
+}
+
+h1{
+    color: white;
 }
