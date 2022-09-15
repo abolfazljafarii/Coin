@@ -12,19 +12,19 @@ function clickSelect() {
         score[1]++;
     }
 
-    let items = document.getElementsByClassName('x');
+    let items = document.getElementsByClassName('hide');
     if (score[0] === 10) {
         document.getElementById('refresh').style.visibility = "visible";
         document.getElementById('end').innerHTML = "You Lose The Game";
         for (let i = 0; i < items.length; i++) {
-            document.getElementsByClassName('x')[i].style.display = "none";
+            document.getElementsByClassName('hide')[i].style.display = "none";
         }
     }
     if (score[1] === 10) {
         document.getElementById('refresh').style.visibility = "visible";
         document.getElementById('end').innerHTML = "You Won The Game";
         for (let i = 0; i < items.length; i++) {
-            document.getElementsByClassName('x')[i].style.display = "none";
+            document.getElementsByClassName('hide')[i].style.display = "none";
         }
     }
     document.getElementById('message').innerHTML = "You : " + score[1] + " | " + "Computer: " + score[0];

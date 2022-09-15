@@ -12,14 +12,6 @@ p {
     font-size: 1.5rem;
 }
 
-.title{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #059CE8;
-    border-radius: 100px;
-    width: 42%;
-    margin: 3%;
-}
-
 .btn {
     background-color: #059CE8;
     border-radius: .4rem;
@@ -30,8 +22,8 @@ p {
     padding: 1.5rem 2.5rem;
     margin: .2rem .5rem;
     transition: background-color .2s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .btn:hover {
     background-color: #09425e;
 }
@@ -50,13 +42,4 @@ i {
 
 i:hover {
     color: #059CE8 !important;
-}
-
-
-body {
-    background-color: #dba54f;
-}
-
-h1{
-    color: white;
 }
