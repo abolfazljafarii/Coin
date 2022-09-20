@@ -1,11 +1,7 @@
-* {
-    font-family: monospace, sans-serif;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#coin,
+#message,
+#score {
+    border-radius: .4rem;
 }
 
 p {
@@ -13,33 +9,19 @@ p {
 }
 
 .btn {
-    background-color: #059CE8;
-    border-radius: .4rem;
-    border: 0;
-    color: white;
-    cursor: pointer;
     font-size: 1.5rem;
-    padding: 1.5rem 2.5rem;
-    margin: .2rem .5rem;
-    transition: background-color .2s;
-}
-
-.btn:hover {
-    background-color: #09425e;
 }
 
 .btn:active {
-    background-color: #059CE8;
+    background-color: #059CE8 !important;
 }
 
-i {
-    visibility: hidden;
-    font-size: 4rem !important;
-    margin: 1rem 0;
+.refresh {
+    font-size: 4rem;
     cursor: pointer;
-    transition: all .2s;
+    transition: .2s all linear;
 }
 
-i:hover {
-    color: #059CE8 !important;
+.refresh:hover {
+    color: #00a6ff !important;
 }

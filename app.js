@@ -1,31 +1,42 @@
-let score = [0, 0];
+const scoreList = [0, 0];
 
-function clickSelect() {
+function clickSelect(params) {
+    let coinSide = document.getElementById('coin');
+    let message = document.getElementById('message');
+    let score = document.getElementById('score');
+    let button = document.getElementsByClassName('btn');
+    let refresh = document.getElementById('refresh');
     const randomSelect = Math.floor(Math.random() * 2);
 
-    if (randomSelect === 1) {
-        document.getElementById('won').innerHTML = "The Computer Won";
-        score[0]++;
+    coinSide.classList.remove('d-none');
+
+    if (randomSelect === 0) {
+        scoreList[0]++;
+        coinSide.innerHTML = `You made the right choice <br> The coin side is ${params[0]}`;
+        coinSide.classList.add('bg-success');
+        coinSide.classList.remove('bg-danger');
 
     } else {
-        document.getElementById('won').innerHTML = "You Won";
-        score[1]++;
+        scoreList[1]++;
+        coinSide.innerHTML = `You made the wrong choice <br> The coin side is ${params[1]}`;
+        coinSide.classList.add('bg-danger');
+        coinSide.classList.remove('bg-success');
     }
 
-    let items = document.getElementsByClassName('hide');
-    if (score[0] === 10) {
-        document.getElementById('refresh').style.visibility = "visible";
-        document.getElementById('end').innerHTML = "You Lose The Game";
-        for (let i = 0; i < items.length; i++) {
-            document.getElementsByClassName('hide')[i].style.display = "none";
-        }
+    scoreList[0] === 10 ? message.innerHTML += "you won the game" : null;
+    scoreList[1] === 10 ? message.innerHTML += "you lose the game" : null;
+
+    if (scoreList[0] === 10 || scoreList[1] === 10) {
+        message.classList.remove("d-none");
+        refresh.classList.remove("d-none");
+        coinSide.classList.add("d-none");
     }
-    if (score[1] === 10) {
-        document.getElementById('refresh').style.visibility = "visible";
-        document.getElementById('end').innerHTML = "You Won The Game";
-        for (let i = 0; i < items.length; i++) {
-            document.getElementsByClassName('hide')[i].style.display = "none";
+    score.classList.remove("d-none");
+    score.innerHTML = `you : ${scoreList[0]} | computer : ${scoreList[1]}`;
+
+    for (i in button) {
+        if (scoreList[0] === 10 || scoreList[1] === 10) {
+            button[i].classList.add("d-none");
         }
-    }
-    document.getElementById('message').innerHTML = "You : " + score[1] + " | " + "Computer: " + score[0];
+    };
 }
