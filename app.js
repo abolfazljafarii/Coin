@@ -23,8 +23,14 @@ function clickSelect(params) {
         coinSide.classList.remove('bg-success');
     }
 
-    scoreList[0] === 10 ? message.innerHTML += "you won the game" : null;
-    scoreList[1] === 10 ? message.innerHTML += "you lose the game" : null;
+    if (scoreList[0] === 10) {
+        message.innerHTML = "you won the game";
+        message.classList.add('bg-success');
+    }
+    if (scoreList[1] === 10) {
+        message.innerHTML = "you lose the game";
+        message.classList.add('bg-danger');
+    }
 
     if (scoreList[0] === 10 || scoreList[1] === 10) {
         message.classList.remove("d-none");
