@@ -28,7 +28,7 @@ function clickSelect(params) {
         message.classList.add('bg-success');
     }
     if (scoreList[1] === 10) {
-        message.innerHTML = "you lose the game";
+        message.innerHTML = "you lost the game";
         message.classList.add('bg-danger');
     }
 
